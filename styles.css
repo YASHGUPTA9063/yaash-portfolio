@@ -1,0 +1,628 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header .logo a {
+    color: #333;
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header .logo span {
+    color: #100e86df;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5em;
+}
+
+header ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header .theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+header .theme-toggle input {
+    display: none;
+}
+
+header .theme-toggle label {
+    background: #100e86df;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+header .theme-toggle label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+
+header .theme-toggle input:checked + label::after {
+    left: 24px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10em 1em 4em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+.hero-content h1 span {
+    display: inline-block;
+    animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+.buttons {
+    margin-top: 1em;
+}
+
+.btn {
+    background-color: #100e86df;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Loading Page Styles */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #100e86df;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loading p {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+header .logo a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header .logo span {
+    color: #100e86df;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5em;
+}
+
+header ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.skills-section {
+    padding: 5em 1em;
+    max-width: 1200px;
+    margin: 5em auto 0;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.skills-container {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    
+}
+
+.skills-bars {
+    flex: 1;
+}
+
+.skill {
+    margin-bottom: 1em;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0.5em;
+}
+
+.skill-level {
+    height: 20px;
+    background: #100e86df;
+    border-radius: 10px 0 0 10px;
+}
+
+.skills-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.education {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.education-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.education-entry .logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.education-entry .details {
+    flex: 1;
+}
+
+.education-entry h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.education-entry h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #555555;
+}
+
+.education-entry p {
+    margin: 5px 0;
+    color: #777777;
+}
+
+.education-entry ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.projects h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.project-entry {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.project-header .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.project-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555555;
+}
+
+.project-details p {
+    margin: 5px 0;
+    color: #777777;
+}
+
+.project-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555555;
+}
+
+bbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.achievements {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.achievements h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.achievements-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.achievement-entry {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.achievement-entry:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-5px);
+}
+
+.achievement-entry h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333333;
+}
+
+.achievement-entry p {
+    margin: 0;
+    color: #666666;
+}
+
+.more-projects-btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more-projects-btn:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.resume-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.resume-section h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.resume-container {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.resume-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-section blockquote {
+    font-size: 1.1em;
+    margin: 20px 0;
+    color: #333;
+    font-style: italic;
+}
+
+.location, .availability {
+    font-size: 1em;
+    color: #777;
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.profile-picture {
+    margin-top: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+}

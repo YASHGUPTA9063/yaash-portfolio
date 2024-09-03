@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash 's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <div id="content" style="display:none;">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Yash  <span>Portfolio</span></a>
+            </div>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle"></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi all, I'm Yash  <span>👋</span></h1>
+                <p>A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.</p>
+                <div class="social-links">
+                    <a href="https://github.com/YASHGUPTA9063"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yash-gupta99/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/Yashgupta800"><i class="fa-brands fa-x-twitter"></i>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="buttons">
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="Yash_Gupta_Resume.pdf" class="btn">Download My Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="illustration.png" alt="Illustration">
+            </div>
+        </section>
+    </main>
+
+    <!-- Skills Section -->
+            <section id="skills" class="skills-section">
+                <h2>Proficiency</h2>
+                <div class="skills-container">
+                    <div class="skills-bars">
+                        <div class="skill">
+                            <p>Java</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>MySql</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;" ></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>HTML</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>CSS</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 82%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>JavaScript</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-image">
+                        <img src="6205646.png" alt="Skills Illustration">
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="education">
+                <h1>Education</h1>
+                <div class="education-entry">
+                    <img src="srm1.png" alt="srm logo" class="logo">
+                    <div class="details">
+                        <h2>SRM Institute of Science and Technology</h2>
+                        <h3>Bachelor of Technology</h3>
+                        <p>Specialization in Cyber Security</p>
+                        <p>August  2020 - July 2024</p>
+                        <ul>
+                            <li>C.G.P.A  = 9.11</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <img src="emblem.png" alt="sjc Logo" class="logo">
+                    <div class="details">
+                        <h2>ST.Joseph's College</h2>
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p>March 2007 - April 2020</p>
+                        <p></p>
+                        <ul>
+                            <li>HIGH SCHOOL = 84.3%</li>
+                            <li>InTERMEDIATE = 83.6%</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--div class="project-entry">
+                    <div class="project-header" style="background-color: #d5deee;">
+                        <img src="srm1.png" alt="Heart Disease Logo" class="logo">
+                        <h2>SRM</h2>
+                    </div>
+                    <div class="project-details">
+                        <h3>Software Engineer</h3>
+                        <p>June 2018 – Present</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-entry">
+                    <div class="project-header" style="background-color: #4267B2;">
+                        <img src="hd.png" alt="Heart Disease Logo" class="logo">
+                        <h2>Facebook Project</h2>
+                    </div>
+                    <div class="project-details">
+                        <h3>Software Engineer</h3>
+                        <p>June 2018 – Present</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        </ul>
+                    </div>
+                </div-->
+            </section>
+
+            <section id="projects"  class="projects">
+            <h1>Projects</h1>
+            <div class="project-entry">
+                <div class="project-header" style="background-color: #4267B2;">
+                    <img src="hd.png" alt="Heart Disease Logo" class="logo">
+                    <h2>Heart Disease Prediction System</h2>
+                </div>
+                <div class="project-details">
+                    <h3>Machine Learning</h3>
+                    <p>2024 – Present</p>
+                    <p>Heart disease prediction system utilizes machine learning
+                        algorithms to analyze patient data, including medical history and
+                        lifestyle factors, to forecast the likelihood of cardiovascular
+                        issues, aiding
+                    </p>
+                    Algorithms
+                    <p>
+                    <ul>
+                        <li>K-nearest neighbors (KNN)</li>
+                        <li>Weighted KNN</li>
+                        <li>Decision trees</li>
+                        <li>RUSBoost algorithm</li>
+                    </ul>
+                </div>
+            </div>
+            <div  class="project-entry">
+                <div class="project-header" style="background-color: #B92B27;">
+                    <img src="ar2.png" alt="Airline Reservation Logo" class="logo">
+                    <h2>Airlines Reservation System</h2>
+                </div>
+                <div class="project-details">
+                    <h3>SQL Database</h3>
+                    <p> 2023 </p>
+                    <p>Airline reservation systems are systems that allow an airline to
+                        sell their inventory . It contains information on schedules and
+                        fares and contains a database of reservations (or passenger
+                        name records) and of tickets issued (if applicable)</p>
+                    <p>Skilled in SQL query writing for extracting, manipulating, and
+                        analyzing data from airline reservation databases</p>
+                </div>
+            </div>
+            <div class="project-entry">
+                <div class="project-header" style="background-color: #FF5A5F;">
+                    <img src="h.png" alt="Hospital Logo" class="logo">
+                    <h2>eHealthCare-centre</h2>
+                </div>
+                <div class="project-details">
+                    <h3>Java</h3>
+                    <p>2020</p>
+                    <p>Java-based E-Health Care Centre streamlines patient records,
+                        diagnosis, and billing. With user authentication and an intuitive
+                        interface, it optimizes healthcare administration, ensuring
+                        efficient and organized services for enhanced patient care and
+                        management</p>
+                </div>
+            </div>
+        </section>
+        
+       <section id="achievements"class="achievements">
+       <h1>Achievements</h1>
+       <div class="achievements-row">
+           <div class="achievement-entry">
+               <h2>Phoenix Hackathon - Secured 3rd position</h2>
+               <p>Assistance to natural calamities survivors</p>
+           </div>
+           <div class="achievement-entry">
+               <h2>National Service Scheme-Special Camp Team Lead</h2>
+               <p>Social service Drive</p>
+           </div>
+       </div>
+       <div class="achievements-row">
+           <div class="achievement-entry">
+               <h2>Tech-Expo - 3rd runner up</h2>
+               <p>Ideathon in which we presented Disease Prediction System</p>
+           </div>
+           <div class="achievement-entry">
+               <h2>NPTEL Certification - Elite</h2>
+               <p>Internet Of Things</p>
+           </div>
+       </div>
+       
+       <!--button class="more-projects-btn">MORE ACHIEVEMENTS</button-->
+   </section>
+
+   <section id="resume" class="resume-section">
+    <h1>My Resume</h1>
+    <div class="resume-container">
+        <iframe src="Yash_Gupta_Resume.pdf" class="resume-viewer"></iframe>
+    </div>
+    <a href="Yash_Gupta_Resume.pdf" class="download-btn" download>Download Resume</a>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1>Reach Out to me!</h1>
+        <p>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</p>
+        <blockquote>
+            "Web Developer | Software Engineer | Innovative "
+        </blockquote>
+        <div class="location">
+            <span>📍 Noida , India</span>
+        </div>
+        <div class="availability">
+            <span>Open for opportunities: Yes</span>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/YASHGUPTA9063"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yash-gupta99/"><i class="fab fa-linkedin"></i></a>
+            <a href="yg800515@gmail.com"><i class=" fa-envelope"></i></a>
+           
+        </div>
+        <div class="profile-picture">
+            <img src="yash.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 YASH Portfolio. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
